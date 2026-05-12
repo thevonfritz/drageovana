@@ -1,0 +1,109 @@
+/* ── Tablet: 768px – 1023px ── */
+@media (max-width: 1023px) {
+  section { padding: 80px 0; }
+
+  /* Hero */
+  .hero { min-height: 100svh; }
+
+  .hero__container {
+    align-items: flex-end;
+    padding-bottom: 64px;
+    min-height: 100svh;
+  }
+
+  .hero__content {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero__subtitle { margin: 0 auto 40px; max-width: 540px; }
+
+  /* Buttons */
+  .btn { display: block; width: 100%; margin-bottom: 12px; }
+
+  /* Texts */
+  .hero__title { font-size: 48px; }
+  .section__title { font-size: 36px; }
+  .form__title { font-size: 32px; }
+
+  /* Results */
+  .results__grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto 56px; }
+
+  /* Form */
+  .form-wrapper { padding: 48px 40px; }
+
+  /* About */
+  .about__container { grid-template-columns: 1fr; gap: 48px; }
+  .about__visual    { max-width: 440px; margin: 0 auto; }
+  .about__content   { text-align: center; }
+  .about__title     { font-size: 30px; }
+
+  /* Experience */
+  .experience__mosaic { grid-template-columns: 1fr; }
+  .mosaic__side { grid-template-rows: auto; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .mosaic__main { min-height: 340px; }
+  .mosaic__item { min-height: 200px; }
+}
+
+/* ── Mobile: até 767px ── */
+@media (max-width: 767px) {
+  section { padding: 64px 0; }
+
+  .section__title { font-size: 30px; }
+
+  /* Hero */
+  .hero { min-height: 100svh; }
+
+  .hero__container {
+    align-items: flex-end;
+    padding-bottom: 56px;
+    min-height: 100svh;
+  }
+
+  .hero__content {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero__title    { font-size: 36px; }
+  .hero__subtitle { font-size: 15px; max-width: 100%; }
+
+  /* Buttons */
+  .btn { font-size: 11px; padding: 14px 28px; letter-spacing: 2px; display: block; width: 100%; margin-bottom: 12px; }
+
+  /* Texts */
+  .section__title { font-size: 30px; }
+  .about__title { font-size: 28px; }
+  .experience__title { font-size: 28px; }
+
+  /* Results */
+  .results__grid { max-width: 360px; }
+
+  /* Form */
+  .form-wrapper { padding: 40px 24px; }
+  .form__title  { font-size: 28px; }
+
+  /* About */
+  .about__name  { font-size: 17px; }
+
+  /* Experience */
+  .experience__title  { font-size: 28px; }
+  .experience__highlight { flex-direction: column; gap: 12px; padding: 28px 24px; }
+  .mosaic__main { min-height: 260px; }
+  .mosaic__item { min-height: 160px; }
+}
+
+/* ── Small mobile: até 400px ── */
+@media (max-width: 400px) {
+  .hero__title   { font-size: 28px; }
+  .hero__subtitle { font-size: 14px; }
+  .section__title { font-size: 26px; }
+  .btn           { padding: 14px 20px; display: block; width: 100%; margin-bottom: 12px; }
+  .form__title   { font-size: 24px; }
+  .about__title  { font-size: 24px; }
+  .experience__title { font-size: 24px; }
+  .form-wrapper  { padding: 32px 18px; }
+  .mosaic__side  { grid-template-columns: 1fr; }
+}
