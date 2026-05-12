@@ -1,260 +1,373 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Referência em toxina botulínica, harmonização glútea e refinamento facial. Dra. Geovana Camargo — procedimentos estéticos com naturalidade e sofisticação.">
-  <meta name="keywords" content="botox, harmonização glútea, preenchimento labial, full face, estética, Dra Geovana Camargo, toxina botulínica">
-  <meta name="author" content="Dra. Geovana Camargo">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dra. Geovana Camargo — Harmonização Facial & Glútea</title>
+<meta name="description" content="Referência em toxina botulínica, refinamento facial e harmonização glútea. Agende sua avaliação com a Dra. Geovana Camargo.">
+<meta name="theme-color" content="#928575">
 
-  <meta property="og:title" content="O Equilíbrio Perfeito para a Sua Melhor Versão | Dra. Geovana Camargo">
-  <meta property="og:description" content="Referência em toxina botulínica e refinamento facial. Harmonização Glútea com assinatura exclusiva. Resultados naturais e sofisticados.">
-  <meta property="og:image" content="img/og-image.png">
-  <meta property="og:url" content="">
-  <meta property="og:type" content="website">
+<!-- Favicon: iniciais GC -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23928575'/><stop offset='1' stop-color='%23CCC1AF'/></linearGradient></defs><rect width='64' height='64' rx='14' fill='url(%23g)'/><text x='32' y='42' font-family='Georgia,serif' font-size='30' font-weight='400' text-anchor='middle' fill='white' letter-spacing='-1'>GC</text></svg>">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="O Equilíbrio Perfeito para a Sua Melhor Versão | Dra. Geovana Camargo">
-  <meta name="twitter:description" content="Referência em toxina botulínica e refinamento facial. Resultados naturais e sofisticados.">
-  <meta name="twitter:image" content="img/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Red+Hat+Mono:wght@400&display=swap">
 
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
+<link rel="stylesheet" href="styles.css">
 
-  <title>O Equilíbrio Perfeito para a Sua Melhor Versão | Dra. Geovana Camargo</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/responsive.css">
-
-  <!-- Meta Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'SEU_PIXEL_ID_AQUI');
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/>
-  </noscript>
+<!-- Meta Pixel (substituir PIXEL_ID) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[]}(window,document,'script');
+// fbq('init', 'PIXEL_ID');
+// fbq('track', 'PageView');
+</script>
 </head>
 <body>
 
-  <!-- DOBRA 1: HERO -->
-  <section class="hero" id="hero">
-    <!-- Imagem de fundo cobrindo todo o hero -->
-    <div class="hero__bg" aria-hidden="true">
-      <picture>
-        <!-- UPLOAD: adicionar imgmb.png para mobile -->
-        <!-- <source media="(max-width: 767px)" srcset="img/imgmb.png"> -->
-        <img src="img/img.png" alt="">
-      </picture>
-    </div>
+<!-- ============================== NAV ============================== -->
+<nav class="nav" aria-label="Navegação principal">
+  <a href="#top" class="nav-brand">
+    <span class="brand-mark" aria-hidden="true">GC</span>
+    <span class="brand-text">
+      <small>Dra.</small>
+      <strong>Geovana Camargo</strong>
+    </span>
+  </a>
+  <div class="nav-links">
+    <a href="#resultados">Resultados</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#experiencia">Experiência</a>
+  </div>
+  <a class="nav-cta" href="#agendar">
+    Agendar
+    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 5h8M5 1l4 4-4 4"/></svg>
+  </a>
+</nav>
 
-    <div class="container hero__container">
-      <div class="hero__content">
-       <!-- <div class="tag">Estética de Alta Performance</div> -->
-        <h1 class="hero__title">O equilíbrio perfeito<br>para a sua <em>melhor versão.</em></h1>
-        <p class="hero__subtitle">Referência na aplicação de toxina botulínica e refinamento facial, a <strong>Dra. Geovana Camargo</strong> agora traz sua assinatura para a Harmonização Glútea. Uma experiência de cuidado absoluto em um ambiente desenhado para o seu máximo conforto.</p>
-        <a href="#formulario" class="btn btn--primary">Quero agendar minha avaliação</a>
+<!-- ============================== HERO ============================== -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="hero-text reveal">
+      <div class="hero-eyebrow-row">
+        <span class="eyebrow">Harmonização Facial & Glútea</span>
+        <span class="hero-stars"><span class="dots">★★★★★</span> +800 avaliações</span>
+      </div>
+
+      <h1 class="h-display">
+        O equilíbrio perfeito<br>
+        para a sua <em>melhor versão.</em>
+      </h1>
+
+      <p class="lead">
+        Referência na aplicação de toxina botulínica e refinamento facial,
+        a Dra. Geovana Camargo agora traz sua assinatura para a Harmonização Glútea.
+        Uma experiência de cuidado absoluto em um ambiente desenhado para o seu máximo conforto.
+      </p>
+
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href="#agendar">
+          Quero agendar minha avaliação
+          <span class="arrow"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 5h8M5 1l4 4-4 4"/></svg></span>
+        </a>
+        <a class="btn btn-ghost" href="#resultados">
+          Ver resultados
+        </a>
+      </div>
+
+      <div class="hero-meta">
+        <div><span class="num">+10</span><span class="lbl">anos de prática</span></div>
+        <div><span class="num">+5k</span><span class="lbl">procedimentos</span></div>
+        <div><span class="num">98%</span><span class="lbl">satisfação</span></div>
       </div>
     </div>
-  </section>
 
-  <!-- DOBRA 2: PROVA SOCIAL -->
-  <section class="results" id="resultados">
-    <div class="container">
-      <div class="results__header">
-        <div class="tag tag--light">Resultados reais</div>
-        <h2 class="section__title">Transformação com<br><em>Naturalidade.</em></h2>
-      </div>
-
-      <div class="results__grid">
-
-        <!-- Card 1: antes1.png / depois1.png -->
-        <article class="result-card">
-          <div class="result-card__photos">
-            <div class="result-card__photo">
-              <img src="img/antes1.png" alt="Antes — Full Face" class="result-card__img">
-              <span class="photo-label">Antes</span>
-            </div>
-            <div class="result-card__photo">
-              <img src="img/depois1.png" alt="Depois — Full Face" class="result-card__img">
-              <span class="photo-label">Depois</span>
-            </div>
-          </div>
-          <div class="result-card__body">
-            <h3 class="result-card__title">Full Face</h3>
-            <p class="result-card__text">Botox preventivo. Realçamos seus traços mantendo sua identidade.</p>
-          </div>
-        </article>
-
-        <!-- Card 2: antes2.png / depois2.png -->
-        <article class="result-card">
-          <div class="result-card__photos">
-            <div class="result-card__photo">
-              <img src="img/antes2.png" alt="Antes — Preenchimento Labial" class="result-card__img">
-              <span class="photo-label">Antes</span>
-            </div>
-            <div class="result-card__photo">
-              <img src="img/depois2.png" alt="Depois — Preenchimento Labial" class="result-card__img">
-              <span class="photo-label">Depois</span>
-            </div>
-          </div>
-          <div class="result-card__body">
-            <h3 class="result-card__title">Preenchimento Labial</h3>
-            <p class="result-card__text">Volume sob medida e contornos definidos para um sorriso naturalmente atraente.</p>
-          </div>
-        </article>
-
-        <!-- Card 3: antes3.png / depois3.png -->
-        <article class="result-card">
-          <div class="result-card__photos">
-            <div class="result-card__photo">
-              <img src="img/antes3.png" alt="Antes — Harmonização Glútea" class="result-card__img">
-              <span class="photo-label">Antes</span>
-            </div>
-            <div class="result-card__photo">
-              <img src="img/depois3.png" alt="Depois — Harmonização Glútea" class="result-card__img">
-              <span class="photo-label">Depois</span>
-            </div>
-          </div>
-          <div class="result-card__body">
-            <h3 class="result-card__title">Harmonização Glútea</h3>
-            <p class="result-card__text">Volume, projeção e correção de celulite e flacidez com naturalidade.</p>
-          </div>
-        </article>
-
-      </div>
-
-      <div class="results__cta">
-        <a href="#formulario" class="btn btn--outline">Quero um resultado assim</a>
+    <div class="hero-figure reveal">
+      <div class="photo">
+        <img src="img/img.png" alt="Dra. Geovana Camargo" loading="eager">
       </div>
     </div>
-  </section>
+  </div>
+</header>
 
-  <!-- DOBRA 3: FORMULÁRIO -->
-  <section class="form-section" id="formulario">
-    <div class="container">
-      <div class="form-wrapper">
-        <div class="form__header">
-          <div class="tag">Primeiro passo</div>
-          <h2 class="section__title form__title">Agende sua<br><em>avaliação.</em></h2>
-          <p class="form__subtitle">Preencha os dados e aguarde o contato da nossa equipe.</p>
-        </div>
-
-        <form class="lead-form" id="leadForm" novalidate>
-          <div class="form-group">
-            <label for="nome" class="form-label">Nome Completo</label>
-            <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo" required autocomplete="name">
-            <span class="form-error" id="nomeError" role="alert">Por favor, insira seu nome completo.</span>
-          </div>
-
-          <div class="form-group">
-            <label for="whatsapp" class="form-label">WhatsApp (com DDD)</label>
-            <input type="tel" id="whatsapp" name="whatsapp" class="form-input" placeholder="(11) 99999-9999" required autocomplete="tel">
-            <span class="form-error" id="whatsappError" role="alert">Por favor, insira um número de WhatsApp válido.</span>
-          </div>
-
-          <div class="form-group">
-            <label for="procedimento" class="form-label">Qual procedimento mais te interessa?</label>
-            <select id="procedimento" name="procedimento" class="form-input form-select" required>
-              <option value="" disabled selected>Selecione um procedimento</option>
-              <option value="botox">Botox</option>
-              <option value="harmonizacao_glutea">Harmonização Glútea</option>
-              <option value="preenchimento_labial">Preenchimento Labial</option>
-              <option value="full_face">Full Face</option>
-              <option value="outros">Outros</option>
-            </select>
-            <span class="form-error" id="procedimentoError" role="alert">Por favor, selecione um procedimento.</span>
-          </div>
-
-          <button type="submit" class="btn btn--primary btn--full">Confirmar minha reserva</button>
-
-          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
-            <p>Reserva confirmada! Nossa equipe entrará em contato em breve pelo WhatsApp.</p>
-          </div>
-        </form>
+<!-- ============================ RESULTADOS ============================ -->
+<section class="section section-soft" id="resultados">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Antes & Depois</span>
+        <h2 class="h-section">
+          Transformação<br>
+          com <em>naturalidade.</em>
+        </h2>
+      </div>
+      <div class="right">
+        <p class="lead">
+          Resultados reais de pacientes da clínica. Arraste a alça em cada imagem
+          para comparar — cada protocolo é desenhado para preservar a sua identidade.
+        </p>
       </div>
     </div>
-  </section>
 
-  <!-- DOBRA 4: SOBRE A ESPECIALISTA -->
-  <section class="about" id="sobre">
-    <div class="container about__container">
-      <div class="about__visual">
-        <img src="img/imgdra.png" alt="Dra. Geovana Camargo — Especialista em injetáveis e protocolos de rejuvenescimento Full Face" class="about__image">
-        <div class="about__name-plate">
-          <span class="about__name-title">Dra.</span>
-          <strong class="about__name">Geovana Camargo</strong>
-        </div>
-      </div>
-      <div class="about__content">
-        <div class="tag">A especialista</div>
-        <h2 class="section__title about__title">Precisão técnica.<br><em>Olhar artístico.</em></h2>
-        <p class="about__text">Especialista em aplicação de injetáveis e protocolos de rejuvenescimento Full Face. A Dra. Geovana é reconhecida pela precisão técnica e pelo olhar artístico que preserva a naturalidade de cada traço.</p>
-        <p class="about__text">Unindo sua expertise facial ao novo padrão de Harmonização Glútea, ela transforma a estética em uma experiência de cuidado absoluto. À frente de uma estrutura exclusiva e acolhedora, sua entrega vai além do procedimento: é a construção da sua melhor versão em um ambiente de puro conforto e sofisticação.</p>
-        <a href="#formulario" class="btn btn--primary">Quero agendar minha avaliação</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- DOBRA 5: A EXPERIÊNCIA -->
-  <section class="experience" id="experiencia">
-    <div class="container">
-      <div class="experience__header">
-        <div class="tag tag--sand">A experiência</div>
-        <h2 class="section__title experience__title">Muito além de um procedimento,<br><em>um momento de cuidado.</em></h2>
-        <p class="experience__subtitle">Projetamos um espaço onde você encontra o acolhimento. Desfrute de um atendimento exclusivo, equipe multidisciplinar para cuidar de cada detalhe da sua beleza.</p>
-      </div>
-
-      <div class="experience__mosaic">
-        <div class="mosaic__main">
-          <img src="img/imgsala.png" alt="Sala de atendimento — clínica Dra. Geovana Camargo" class="mosaic__img">
-        </div>
-        <div class="mosaic__side">
-          <div class="mosaic__item">
-            <img src="img/imgsala2.png" alt="Clínica Dra. Geovana Camargo" class="mosaic__img">
-          </div>
-          <div class="mosaic__item">
-            <img src="img/imgsala3.png" alt="Clínica Dra. Geovana Camargo" class="mosaic__img">
+    <div class="results-grid">
+      <!-- A: Full Face -->
+      <article class="result-card reveal">
+        <div class="ba-frame" role="img" aria-label="Comparativo antes e depois — Full Face">
+          <img class="ba-img" src="img/antes1.png" alt="Antes — Full Face" loading="lazy">
+          <img class="ba-img ba-after" src="img/depois1.png" alt="Depois — Full Face" loading="lazy">
+          <span class="ba-label before">Antes</span>
+          <span class="ba-label after">Depois</span>
+          <div class="ba-divider"></div>
+          <div class="ba-handle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg>
           </div>
         </div>
-      </div>
+        <div class="result-meta">
+          <div class="kicker">Bloco A — Face</div>
+          <h3>Full Face</h3>
+          <p>Botox preventivo e protocolo Full Face. Realçamos seus traços mantendo a sua identidade.</p>
+        </div>
+      </article>
 
-      <!-- <p class="experience__highlight-text">Equipe completa para procedimentos faciais e corporais.</p> -->
+      <!-- B: Lábios -->
+      <article class="result-card reveal">
+        <div class="ba-frame" role="img" aria-label="Comparativo antes e depois — Lábios">
+          <img class="ba-img" src="img/antes2.png" alt="Antes — Lábios" loading="lazy">
+          <img class="ba-img ba-after" src="img/depois2.png" alt="Depois — Lábios" loading="lazy">
+          <span class="ba-label before">Antes</span>
+          <span class="ba-label after">Depois</span>
+          <div class="ba-divider"></div>
+          <div class="ba-handle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg>
+          </div>
+        </div>
+        <div class="result-meta">
+          <div class="kicker">Bloco B — Lábios</div>
+          <h3>Preenchimento labial refinado</h3>
+          <p>Volume sob medida e contornos definidos para um sorriso naturalmente atraente.</p>
+        </div>
+      </article>
 
-      <div class="experience__cta">
-        <a href="#formulario" class="btn btn--primary">Quero viver essa experiência</a>
+      <!-- C: Glúteo -->
+      <article class="result-card reveal">
+        <div class="ba-frame" role="img" aria-label="Comparativo antes e depois — Harmonização Glútea">
+          <img class="ba-img" src="img/antes3.png" alt="Antes — Harmonização Glútea" loading="lazy">
+          <img class="ba-img ba-after" src="img/depois3.png" alt="Depois — Harmonização Glútea" loading="lazy">
+          <span class="ba-label before">Antes</span>
+          <span class="ba-label after">Depois</span>
+          <div class="ba-divider"></div>
+          <div class="ba-handle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg>
+          </div>
+        </div>
+        <div class="result-meta">
+          <div class="kicker">Bloco C — Corpo</div>
+          <h3>Harmonização Glútea</h3>
+          <p>Volume, projeção e correção de celulites e flacidez — com olhar artístico e técnica.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="results-cta reveal">
+      <a class="btn btn-primary" href="#agendar">
+        Quero um resultado assim
+        <span class="arrow"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 5h8M5 1l4 4-4 4"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SOBRE ============================== -->
+<section class="about" id="sobre">
+  <div class="container">
+    <div class="about-figure reveal">
+      <img src="img/dra.png" alt="Retrato da Dra. Geovana Camargo" loading="lazy">
+      <div class="badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        Especialista em injetáveis
       </div>
     </div>
-  </section>
 
-  <!-- RODAPÉ -->
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__brand">
-        <p class="footer__name">Dra. Geovana Camargo</p>
-        <p class="footer__specialty">Estética Facial & Corporal</p>
-      </div>
-      <div class="footer__divider" aria-hidden="true"></div>
-      <p class="footer__copy">© Dra. Geovana Camargo — Todos os direitos reservados.</p>
+    <div class="about-copy reveal">
+      <span class="eyebrow">Sobre a especialista</span>
+      <h2 class="about-name">Dra. <strong>Geovana<br>Camargo</strong></h2>
+      <p>
+        Especialista em aplicação de injetáveis e protocolos de rejuvenescimento <strong>Full Face</strong>.
+        A Dra. Geovana é reconhecida pela <strong>precisão técnica</strong> e pelo
+        <strong>olhar artístico</strong> que preserva a naturalidade de cada traço.
+      </p>
+      <p>
+        Unindo sua expertise facial ao novo padrão de Harmonização Glútea, ela transforma
+        a estética em uma experiência de cuidado absoluto. À frente de uma estrutura exclusiva
+        e acolhedora, sua entrega vai além do procedimento: é a construção da sua melhor versão
+        em um ambiente de puro conforto e sofisticação.
+      </p>
+
+      <ul class="about-list">
+        <li>Toxina botulínica</li>
+        <li>Preenchimento labial</li>
+        <li>Protocolo Full Face</li>
+        <li>Harmonização glútea</li>
+        <li>Skinbooster & bioestimuladores</li>
+        <li>Avaliação personalizada</li>
+      </ul>
+
+      <a class="btn btn-primary" href="#agendar">
+        Quero agendar minha avaliação
+        <span class="arrow"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 5h8M5 1l4 4-4 4"/></svg></span>
+      </a>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="scripts/animations.js"></script>
+<!-- ============================ EXPERIÊNCIA ============================ -->
+<section class="experience" id="experiencia">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">A experiência</span>
+        <h2 class="h-section">Muito além de um procedimento,<br>um <em>momento de cuidado.</em></h2>
+      </div>
+      <div class="right">
+        <p class="lead">
+          Projetamos um espaço onde você encontra o acolhimento. Desfrute de um atendimento
+          exclusivo, com equipe multidisciplinar para cuidar de cada detalhe da sua beleza.
+        </p>
+      </div>
+    </div>
 
+    <div class="exp-mosaic reveal">
+      <figure>
+        <img src="img/foto1.png" alt="Ambiente da clínica" loading="lazy">
+        <figcaption>Recepção</figcaption>
+      </figure>
+      <figure>
+        <img src="img/foto2.png" alt="Ambiente da clínica" loading="lazy">
+        <figcaption>Sala 01</figcaption>
+      </figure>
+      <figure>
+        <img src="img/foto3.png" alt="Ambiente da clínica" loading="lazy">
+        <figcaption>Cardápio de mimos</figcaption>
+      </figure>
+      <figure>
+        <img src="img/foto4.png" alt="Ambiente da clínica" loading="lazy">
+        <figcaption>Lounge</figcaption>
+      </figure>
+      <figure>
+        <img src="img/foto5.png" alt="Ambiente da clínica" loading="lazy">
+        <figcaption>Sala corporal</figcaption>
+      </figure>
+    </div>
+
+    <div class="exp-highlight reveal">
+      <strong>Equipe completa para procedimentos faciais e corporais.</strong>
+      <span class="icon-circle" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="9" cy="8" r="3.5"/>
+          <circle cx="17" cy="9" r="2.6"/>
+          <path d="M3 19c.8-3.4 3.3-5 6-5s5.2 1.6 6 5"/>
+          <path d="M14.6 18c.6-2.4 2.1-3.6 4.1-3.6 1.5 0 2.9.8 3.8 2.6"/>
+        </svg>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FORM (Dobra 3) ============================ -->
+<section class="form-section" id="agendar">
+  <div class="container form-wrap">
+    <div class="form-info reveal">
+      <span class="eyebrow">Avaliação</span>
+      <h2 class="h-section">Agende sua <em>avaliação.</em></h2>
+      <p class="lead">Preencha os dados e aguarde o contato da nossa equipe. Atendemos com hora marcada e total privacidade.</p>
+      <ul>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"/></svg>
+          Resposta da equipe em até <strong>2 horas úteis</strong>.
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"/></svg>
+          Avaliação personalizada, sem compromisso.
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"/></svg>
+          Plano de cuidado desenhado para você.
+        </li>
+      </ul>
+    </div>
+
+    <div class="form-card reveal">
+      <form id="lead-form" novalidate>
+        <h3>Reserve seu horário</h3>
+        <p class="form-sub">Preencha os dados e aguarde o contato da nossa equipe.</p>
+
+        <div class="field">
+          <label for="f-name">Nome completo</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Como podemos te chamar?">
+          <span class="err" data-for="f-name"></span>
+        </div>
+
+        <div class="field">
+          <label for="f-phone">WhatsApp (com DDD)</label>
+          <input id="f-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(11) 90000-0000">
+          <span class="err" data-for="f-phone"></span>
+        </div>
+
+        <div class="field">
+          <label for="f-procedure">Procedimento de interesse</label>
+          <select id="f-procedure" name="procedure">
+            <option value="">Selecione uma opção</option>
+            <option>Botox</option>
+            <option>Harmonização Glútea</option>
+            <option>Preenchimento Labial</option>
+            <option>Full Face</option>
+            <option>Outros</option>
+          </select>
+          <span class="err" data-for="f-procedure"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Confirmar minha reserva
+          <span class="arrow"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 5h8M5 1l4 4-4 4"/></svg></span>
+        </button>
+        <p class="form-fineprint">Seus dados estão protegidos pela LGPD e usados apenas para retorno.</p>
+      </form>
+
+      <div id="form-success" class="form-success">
+        <strong>Reserva enviada com sucesso ✦</strong>
+        <p>Nossa equipe entrará em contato em breve pelo WhatsApp informado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer>
+  <div class="container">
+    <div>
+      <a href="#top" class="nav-brand">
+        <span class="brand-mark">GC</span>
+        <span class="brand-text">
+          <small>Dra.</small>
+          <strong>Geovana Camargo</strong>
+        </span>
+      </a>
+      <p>Harmonização facial, glútea e protocolos de rejuvenescimento. Atendimento exclusivo, com hora marcada.</p>
+    </div>
+    <div class="foot-meta">
+      <a href="#agendar">Agendar avaliação →</a>
+      <a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>© <span id="year">2026</span> Dra. Geovana Camargo. Todos os direitos reservados.</span>
+    <span>Conteúdo informativo — não substitui consulta médica.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
