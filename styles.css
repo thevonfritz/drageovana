@@ -444,62 +444,49 @@ section { position: relative; }
 }
 .result-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 
-.ba-frame {
+/* Before/After pair — side by side */
+.ba-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--color-line);
+}
+.ba-pair figure {
   position: relative;
+  margin: 0;
   aspect-ratio: 4 / 5;
   overflow: hidden;
-  cursor: ew-resize;
-  user-select: none;
+  background: var(--color-secondary);
 }
-.ba-frame .ba-img {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
+.ba-pair figure img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
 }
-.ba-frame .ba-after {
-  clip-path: inset(0 0 0 50%);
-  transition: clip-path .05s linear;
-}
-.ba-frame .ba-divider {
-  position: absolute;
-  top: 0; bottom: 0;
-  left: 50%;
-  width: 2px;
-  background: #fff;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.18);
-  transform: translateX(-50%);
-  pointer-events: none;
-}
-.ba-frame .ba-handle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 44px; height: 44px;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: var(--shadow-md);
-  transform: translate(-50%, -50%);
-  display: grid; place-items: center;
-  pointer-events: none;
-}
-.ba-handle svg { width: 18px; height: 18px; color: var(--color-primary); }
-.ba-frame .ba-label {
+.ba-pair figcaption {
   position: absolute;
   top: 14px;
+  left: 14px;
   padding: 6px 12px;
   border-radius: var(--radius-pill);
   font-family: var(--font-display);
   font-size: 10px;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 500;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
-.ba-frame .ba-label.before { left: 14px; background: rgba(3,3,3,0.55); color: #fff; }
-.ba-frame .ba-label.after  { right: 14px; background: rgba(255,255,255,0.85); color: var(--color-text); }
+.ba-pair figure:first-child figcaption {
+  background: rgba(3,3,3,0.55);
+  color: #fff;
+}
+.ba-pair figure:last-child figcaption {
+  background: rgba(255,255,255,0.85);
+  color: var(--color-text);
+}
 
 .result-meta {
   padding: 26px 28px 30px;
@@ -990,8 +977,8 @@ footer .foot-meta a:hover { color: var(--color-accent); }
   .section-head .right .lead { font-size: 15px; }
 
   /* Results — slightly slimmer cards */
-  .ba-frame { aspect-ratio: 4 / 5; }
-  .ba-frame .ba-handle { width: 38px; height: 38px; }
+  .ba-pair figure { aspect-ratio: 4 / 5; }
+  .ba-pair figcaption { font-size: 9.5px; padding: 5px 10px; letter-spacing: 0.14em; }
   .result-meta { padding: 22px 22px 26px; }
   .result-meta h3 { font-size: 19px; }
   .result-meta p { font-size: 13.5px; }
